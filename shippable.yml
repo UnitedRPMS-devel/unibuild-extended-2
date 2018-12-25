@@ -18,7 +18,7 @@ build:
 # commands in this section run inside your CI container. In addition, any commands such as ls, in this section can be used to skip default processing #for CI.
   ci:
     # Here you'd place anything you want to test. 
-    - docker run --privileged=true --cap-add=SYS_ADMIN -v $(pwd)/30:/root/enjoy/ davidva/unibuild-30 /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/handbrake -s handbrake.spec -r true -d 'dist .fc30' -c true -w true"
+    - docker run --privileged=true --cap-add=SYS_ADMIN -v $(pwd)/30:/root/enjoy/ davidva/unibuild-30 /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/chromium-freeworld-libs-media -s chromium-freeworld-libs-media.spec -r true -d 'dist .fc30' -c true -w true"
 notifications:
 email: davidva@tutanota.com
 
