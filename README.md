@@ -2,14 +2,14 @@
 
 A hand a UnitedRPMS-devel.
 
-### Shippable (F26)
+### Shippable (F30)
 
 
 [![Run Status](https://api.shippable.com/projects/58e99ab064421007001c6c15/badge?branch=master)](https://app.shippable.com/github/UnitedRPMS-devel/unibuild-extended-2)
 
 
 
-### Travis (F27)
+### Travis (F29)
 
 
 [![Build Status](https://travis-ci.org/UnitedRPMS-devel/unibuild-extended-2.svg?branch=master)](https://travis-ci.org/UnitedRPMS-devel/unibuild-extended-2)
