@@ -4,7 +4,7 @@ sudo: required
 services:
 - docker
 script:
-- docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-29 /bin/sh -c "rm -f urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/kodi-pvr-addons -s kodi-pvr-addons.spec -r true -d 'dist .fc29' -c true -u true -w true"
+- docker run -v $(pwd):/root/enjoy --cap-add=SYS_ADMIN davidva/unibuild-29 /bin/sh -c "rm -f urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/kodi-addon-visualizations -s kodi-addon-visualizations.spec -r true -d 'dist .fc29' -c true -u true -w true"
 notifications:
   webhooks:
     urls:
