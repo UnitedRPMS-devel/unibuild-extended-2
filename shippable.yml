@@ -5,7 +5,8 @@ language: none
 build:
   pre_ci_boot:
     image_name: davidva/unibuild-30
-    pull: false
+    image_tag: latest
+    pull: true
     env: LM=ML 
     options: "-e HOME=/root" 
 
@@ -15,7 +16,3 @@ build:
     - /bin/sh -c "rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/python2-kid -s python2-kid.spec -r true -d 'dist .fc30' -c true -u true"
 notifications:
 email: davidva@tuta.io
-
-
-
-
