@@ -2,12 +2,12 @@ version: 2
 jobs:
   build:
     docker: 
-      - image: davidva/unibuild-28	
+      - image: davidva/unibuild-31	
     working_directory: ~/enjoy
     parallelism: 1
     steps:
       - checkout
-      - run: " cd / && rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/libcpuid -s libcpuid.spec -r true -d 'dist .fc28' -c true" 
+      - run: " cd / && rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/i-nex -s i-nex.spec -r true -d 'dist .fc31' -c true -w true" 
 workflows:
   version: 2
   build_and_test:
