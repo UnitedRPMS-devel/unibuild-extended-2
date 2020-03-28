@@ -9,7 +9,7 @@ A hand a UnitedRPMS-devel.
 
 
 
-### Travis (F32)
+### Travis (F33)
 
 
 [![Build Status](https://travis-ci.org/UnitedRPMS-devel/unibuild-extended-2.svg?branch=master)](https://travis-ci.org/UnitedRPMS-devel/unibuild-extended-2)
