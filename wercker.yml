@@ -16,7 +16,7 @@ build:
           /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/upnp-player-qt -s upnp-player-qt.spec -r true -d 'dist .fc31' -u true"  
 
 
-# builds upnp-player-qt 
+# builds OpenImageIO
 
 
 
