@@ -4,7 +4,7 @@
 # http://devcenter.wercker.com/docs/containers/index.html
 build:
     box:
-      id: davidva/unibuild-31
+      id: davidva/unibuild-33
       username: $USERNAME
       password: $PASSWORD
       tag: latest
@@ -13,10 +13,10 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/ffmpeg -s ffmpeg.spec -r true -d 'dist .fc31' -u true"  
+          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/xine-lib -s xine-lib.spec -r true -d 'dist .fc33' -c true -u true -w true"  
 
 
-# builds ffmpeg
+# builds xine-lib
 
 
 
