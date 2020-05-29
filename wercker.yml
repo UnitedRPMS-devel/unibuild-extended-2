@@ -13,10 +13,10 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/i-nex -s i-nex.spec -r true -d 'dist .fc30' -c true -u true"  
+          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/opera -s opera.spec -r true -d 'dist .fc30' -u true"  
 
 
-# builds i-nex
+# builds opera
 
 
 
