@@ -13,10 +13,10 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/libavtp -s libavtp.spec -r true -d 'dist .fc33' -c true -u true"  
+          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/github-release -s github-release.spec -r true -d 'dist .fc33' -c true -u true"  
 
 
-# builds libavtp
+# builds github-release
 
 
 
