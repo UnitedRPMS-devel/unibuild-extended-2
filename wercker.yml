@@ -4,19 +4,19 @@
 # http://devcenter.wercker.com/docs/containers/index.html
 build:
     box:
-      id: davidva/unibuild-30
+      id: davidva/unibuild-33
       username: $USERNAME
       password: $PASSWORD
       tag: latest
     steps:
       - script:
-        command-timeout: 30
+        command-timeout: 33
         name: echo
         code: | 
-          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/avidemux -s avidemux.spec -r true -d 'dist .fc30' -c true -u true -w true"  
+          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/opencv -s opencv.spec -r true -d 'dist .fc33' -c true -u true -w true"  
 
 
-# builds avidemux
+# builds opencv
 
 
 
