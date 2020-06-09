@@ -13,10 +13,10 @@ build:
         command-timeout: 33
         name: echo
         code: | 
-          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/vidcutter -s vidcutter.spec -r true -d 'dist .fc33' -c true -u true"  
+          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/acestream-launcher -s acestream-launcher.spec -r true -d 'dist .fc33' -c true -u true"  
 
 
-# builds vidcutter
+# builds acestream-launcher
 
 
 
