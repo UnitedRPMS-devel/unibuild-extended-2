@@ -15,7 +15,7 @@ workflows:
       - build
 notify:
   webhooks:
-    # A list of hook hashes, containing the url field
+    # A list of hook hashes, containing the url field OK
     # gitter hook
     - url: https://webhooks.gitter.im/e/8ff0b35066468a87de71
 
