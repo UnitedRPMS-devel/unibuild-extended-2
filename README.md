@@ -1,6 +1,6 @@
 # unibuild-extended-2
 
-A hand a UnitedRPMS-devel
+A hand a UnitedRPMS-devel...
 
 ### Shippable (F33)
 
