@@ -13,7 +13,7 @@ build:
         command-timeout: 30
         name: echo
         code: | 
-          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/mlt -s mlt.spec -r true -d 'dist .fc31' -c true -u true"  
+          /bin/sh -c " cd / && rm -f /urpms && wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x urpms && /urpms -g UnitedRPMs/python2-mlt -s python2-mlt.spec -r true -d 'dist .fc31' -c true -u true"  
 
 
 
