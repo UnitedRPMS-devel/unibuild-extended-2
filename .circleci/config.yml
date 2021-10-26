@@ -7,7 +7,7 @@ jobs:
     parallelism: 1
     steps:
       - checkout
-      - run: " cd / && rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/yaru -s yaru.spec -r true -d 'dist .fc33' -c true -u true" 
+      - run: " cd / && rm -f /urpms && /usr/bin/wget -c https://raw.githubusercontent.com/kuboosoft/united-build/master/urpms && chmod a+x $PWD/urpms && ./urpms -g UnitedRPMs/electron -s electron.spec -r true -d 'dist .fc33' -c true -u true" 
 workflows:
   version: 2
   build_and_test:
